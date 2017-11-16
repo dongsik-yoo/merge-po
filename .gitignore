@@ -1,0 +1,15 @@
+bower_components
+node_modules*
+report
+node_modules*
+dist
+
+test/karma.conf.js
+
+.tmp
+.idea
+.sass-cache
+.newer-cache
+.module-cache
+access_logs.db
+*.mo
