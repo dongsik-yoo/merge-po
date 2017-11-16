@@ -1,0 +1,42 @@
+<html>
+    <head>
+        <title>PO Merge</title>
+        <link type="text/css" href="css/main.css" rel="stylesheet">
+    </head>
+    <body>
+        <div class="wrapper">
+            <div class="first-row-one">
+                <h3>번역된 PO 파일</h3>
+                
+                <div class="menu">
+                    <ul>
+                        <li><span class="active" id="btn-merge">번역문자열 병합</span></li>
+                    </ul>
+                    <p>
+                        필터 : <input class="filter-msgid" type="text" name="src"><input type="checkbox" id="hide-duplicate">중복 숨기기
+                    </p>
+                </div>
+                <input type="file" id="srcfile">
+            </div>
+            <div class="first-row-two">
+                <h3>반영할 PO 파일</h3>
+                <div class="menu">
+                    <ul>
+                        <li><span class="active" id="btn-save">파일로 저장</span></li>
+                    </ul>
+                    <p>
+                        필터 : <input class="filter-msgid" type="text" name="target"> 파일 이름 : <input type="text" id="targetFileName"> 
+                    </p>
+                </div>
+                <input type="file" id="targetfile">
+            </div>
+            <div class="second-row-one" id="srcGrid"></div>
+            <div class="second-row-two" id="targetGrid"></div>
+        </div>
+        <script src="bundle/vendor.js"></script>
+        <script src="bundle/app.js"></script>
+        <script src="js/source_potext.js"></script>
+        <script src="js/target_potext.js"></script>
+        <script src="js/main.js"></script>
+    </body>
+</html>
